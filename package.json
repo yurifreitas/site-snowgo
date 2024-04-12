@@ -1,57 +1,47 @@
 {
   "name": "snowgo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://snowgo.com.br/",
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "bootstrap": "^4.4.1",
-    "gsap": "^3.2.6",
-    "polished": "^3.4.4",
-    "react": "^16.13.0",
-    "react-bootstrap": "^1.0.0-beta.17",
-    "react-dom": "^16.13.0",
-    "react-icons": "^3.9.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
-    "styled-components": "^5.0.1"
-  },
+  "description": "snowgo",
+  "author": "yuri dev",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "develop": "gatsby develop -p 3000",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve -p 3000",
+    "clean": "gatsby clean"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "bootstrap": "^5.3.2",
+    "gatsby": "^5.13.2",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-minify": "^0.5.0",
+    "gatsby-plugin-offline": "^6.13.2",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "gatsby-plugin-preload-fonts": "^4.13.1",
+    "gatsby-plugin-purgecss": "^6.2.1",
+    "gatsby-plugin-react-helmet": "^6.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-plugin-sitemap": "^6.13.1",
+    "gatsby-source-wordpress": "^7.13.2",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "gsap": "^3.12.5",
+    "polished": "^4.2.2",
+    "postcss": "^8.4.33",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.21.3",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "babel-plugin-root-import": "^6.5.0",
-    "customize-cra": "^0.9.1",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.0",
-    "prettier": "^1.19.1",
-    "react-app-rewired": "^2.1.5"
+    "@svgr/webpack": "^8.1.0"
   }
 }

@@ -28,8 +28,8 @@ export const BucketIcon = styled.a`
   }
 
   img{
-    width: 47px;
-    height: 100%;
+    width: 60%;
+   
   }
 `;
 

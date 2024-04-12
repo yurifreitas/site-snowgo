@@ -18,7 +18,8 @@ export default function Menu() {
   const [modal, setModal] = useState(false);
   const { width, height } = useWindowDimensions();
 
-  function handleToggleModal() {
+  function handleToggleModal(event) {
+    event.preventDefault();
     setModal(!modal);
   }
 
@@ -32,7 +33,7 @@ export default function Menu() {
 
           <section>
             <h1>Como quer prosseguir?</h1>
-            <Button color="orange" href="https://snowgo.menudino.com/">
+            <Button color="orange" href="https://api.whatsapp.com/send?phone=5511945592940">
               <FiShoppingCart color="#fff" size="1.7em" />
               Não tenho tempo, quero pedir já
             </Button>
@@ -52,7 +53,7 @@ export default function Menu() {
       )}
 
       <MenuContainer width={width}>
-        <Item activeClassName="active" exact to="/">
+        <Item activeClassName="active" exact="true" to="/">
           <Home />
           Inicio
         </Item>
@@ -63,7 +64,6 @@ export default function Menu() {
 
         <Bucket
           onClick={handleToggleModal}
-          timed
           style={{ margin: '-0.6em 0 0 0' }}
           size="small"
           align="top"

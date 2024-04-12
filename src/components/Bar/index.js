@@ -5,7 +5,7 @@ import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 
 import { BarContainer, Social } from './styles';
 
-import logo from '~/assets/img/snowgo.svg';
+import logo from '~/assets/img/diretorio_otimizado/snowgo.svg';
 
 export default function Bar() {
   let content = useRef(null);

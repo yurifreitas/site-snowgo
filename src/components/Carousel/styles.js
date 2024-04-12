@@ -1,0 +1,54 @@
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
+  height: 100%;
+  padding:10px;
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 5px 10px;
+
+    h1 {
+      font-size: 100px;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 74px;
+      line-height: 1;
+      max-width: 624px;
+    }
+
+    a {
+      width: fit-content;
+      margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      padding: 5px 10px;
+      h1 {
+        font-size: 80px;
+      }
+
+      p {
+        font-size: 50px;
+      }
+    }
+  }
+
+  @media (max-width: 1250px) {
+    .container {
+      h1 {
+        font-size: 80px;
+      }
+
+      p {
+        font-size: 50px;
+      }
+    }
+  }
+`;

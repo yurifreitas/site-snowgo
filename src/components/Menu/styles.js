@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'gatsby'
 import { transparentize } from 'polished';
 
 import variables from '~/styles/variables';
@@ -37,7 +37,7 @@ export const MenuContainer = styled.div`
   }
 `;
 
-export const Item = styled(NavLink)`
+export const Item = styled(Link)`
   color: ${variables.colors.white};
   font-size: 9px;
   transition: all ease 0.3s;

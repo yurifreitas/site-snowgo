@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, BucketIcon, Label, Text } from './styles';
 
-import bucket from '~/assets/img/ice-bucket.svg';
+import bucket from '~/assets/img/diretorio_otimizado/ice-bucket.svg';
 
 export default function Bucket({
   children,
@@ -13,9 +13,9 @@ export default function Bucket({
   ...rest
 }) {
   return (
-    <Container align={align} {...rest}>
+    <Container align={align} {...rest} className='px-3'>
       <BucketIcon align={align} size={size} href={link || '#!'} target={target}>
-        <img src={bucket} alt="Peça pelo WhatsApp" />
+        <img src={bucket} style={{padding:10}} alt="Peça pelo WhatsApp" />
       </BucketIcon>
 
       {children && (

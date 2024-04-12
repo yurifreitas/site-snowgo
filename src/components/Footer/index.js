@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { MdPhoneInTalk } from 'react-icons/md';
 import { IoLogoWhatsapp } from 'react-icons/io';
-
+import { Row, Col, Image } from 'react-bootstrap';
 import Bucket from '~/components/Bucket';
 
-import snowWhite from '~/assets/img/snowgo_white.svg';
+import snowWhite from '~/assets/img/diretorio_otimizado/snowgo_white.svg';
 
 import { FooterContainer, Wrapper, Credits } from './styles';
-
+import whatsapp from '~/assets/img/whatsapp-btn.png';
 export default function Footer() {
   return (
     <Wrapper>
@@ -38,7 +37,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        
+
 
         <div className="column">
           <ul>
@@ -74,15 +73,9 @@ export default function Footer() {
               <h3>Telefones</h3>
             </li>
             <li>
-              <a href="https://api.whatsapp.com/send?phone=5511945592940">
+              <a href="https://api.whatsapp.com/send?phone=5511945592940" target="blank">
                 <IoLogoWhatsapp color="#27BDBE" size="1.7em" />
                 (11) 94559-2940
-              </a>
-            </li>
-            <li>
-              <a href="tel:2508-3530">
-                <MdPhoneInTalk color="#27BDBE" size="1.7em" />
-                (11) 2508-3530
               </a>
             </li>
           </ul>
@@ -90,19 +83,23 @@ export default function Footer() {
           <ul>
             <Bucket
               target="_blank"
-              link="https://snowgo.menudino.com/"
+              link="https://api.whatsapp.com/send?phone=5511945592940"
             />
           </ul>
         </div>
       </FooterContainer>
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=5511945592940&amp;text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20pacote%20de%20gelo" className="footer-btn-whatsapp">
+        <Image src={whatsapp}  />
 
+      </a>
       <hr />
 
       <Credits>
         <img src={snowWhite} alt="SnowGo - Gelo Delivery" />
 
-        <p>© 2021 SnowGo, Inc. Todos os direitos reservados.</p>
+        <p>© 2024 SnowGo, Inc. Todos os direitos reservados.</p>
       </Credits>
+      
     </Wrapper>
   );
 }
